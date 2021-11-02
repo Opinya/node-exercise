@@ -8,15 +8,15 @@ In this exercise you will build a simple web application using node js and expre
     • The app will load data from a JSON file (resources/data.json) into memory using the models defined
     • The app will serve the following endpoints
     • GET /items
-        ◦ Will return an html page with a list of grocery items based on the design provided in the mock file (resources/app.pdf)
+        ◦ Will return an html page with a list of items based on the design provided in the mock file (resources/app.pdf)
         ◦ The items in the list will be only items with a “pending” status
         ◦ Items with the same product_id should be grouped together
         ◦ Click on V will send a POST request to /items/:id with the id of the item that was clicked and the amount the was gathered as a parameter (the number listed)
         ◦ Click on X will display the out of stock/can’t find it dialog buttons
             ▪ Click on can’t find it will send a POST request to /items/:id with the id of the item that was clicked and amount of 0 as a parameter
             ▪ Click on out of stock will send a DELETE request to /items/:id with the id of the item and no parameters
-        ◦ Click on the “Missing cart” drop down will POST to /cart and set a new "working cart" with the cart returned
-        ◦ Click on the “Cart ready” button will PUT to /cart/:id, change the cart status to filled, generate a new cart and set it as working cart
+        ◦ Click on the “Missing cart” drop down will POST to /cart and set a new "active cart" with the cart returned
+        ◦ Click on the “Cart ready” button will PUT to /cart/:id, change the cart status to filled, generate a new cart and set it as active cart (should be reflected in UI)
     • POST /items/:id
         ◦ Update the in-memory model of the corresponding item with the amount that was gathered and update the item’s status accordingly, and set the item's cart id to current cart
         ◦ Reload the items page
