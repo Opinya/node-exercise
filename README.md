@@ -17,7 +17,7 @@ In this exercise you will build a simple web application using node js and expre
             ▪ Click on out of stock will send a DELETE request to /items/:id with the id of the item and no parameters
         ◦ Click on the “Missing cart” drop down will POST to /cart and set a new "active cart" with the cart returned
         ◦ Click on the “Cart ready” button will PUT to /cart/:id, change the cart status to filled, generate a new cart and set it as active cart (should be reflected in UI)
-    • POST /items/:id
+    • PUT /items/:id
         ◦ Update the in-memory model of the corresponding item with the amount that was gathered and update the item’s status accordingly, and set the item's cart id to current cart
         ◦ Reload the items page
     • DELETE /items/:id
