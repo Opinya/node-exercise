@@ -5,10 +5,10 @@ In this exercise you will build a simple web application using node js and expre
 
     • The app should have data models for product, line item, as defined in the file below
         ◦ You can use mongoose or vanilla classes to define the models
-    • The app will load data from a JSON file data.json into memory using the models defined
+    • The app will load data from a JSON file (resources/data.json) into memory using the models defined
     • The app will serve 3 endpoints
     • GET /items
-        ◦ Will return an html page with a list of grocery items based on the design provided in the file app.pdf
+        ◦ Will return an html page with a list of grocery items based on the design provided in the mock file (resources/app.pdf)
         ◦ The items in the list will be only items with a “pending” status
         ◦ Items with the same product_id should be grouped together
         ◦ Click on V will send a POST request to /items/:id with the id of the item that was clicked and the amount the was gathered as a parameter (the number listed)
