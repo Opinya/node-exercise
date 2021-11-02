@@ -32,7 +32,6 @@ In this exercise you will build a simple web application using node js and expre
         ◦ Will respond with an HTML page with a header “You are now on break”
 
 
-
 Models
 
 Product
