@@ -15,22 +15,18 @@ In this exercise you will build a simple web application using node js and expre
         ◦ Click on X will display the out of stock/can’t find it dialog buttons
             ▪ Click on can’t find it will send a POST request to /items/:id with the id of the item that was clicked and amount of 0 as a parameter
             ▪ Click on out of stock will send a DELETE request to /items/:id with the id of the item and no parameters
-        ◦ Click on the “break” drop down item will POST to /break/:id with the employee id
-        ◦ Click on the “Missing cart” drop down will GET to /cart/:employee_id
-        ◦ Click on the “Cart ready” button will POST to /cart/:id with the cart’s id
+        ◦ Click on the “Missing cart” drop down will POST to /cart and set a new "working cart" with the cart returned
+        ◦ Click on the “Cart ready” button will PUT to /cart/:id, change the cart status to filled, generate a new cart and set it as working cart
     • POST /items/:id
-        ◦ Update the in-memory model of the corresponding item with the amount that was gathered and update the item’s status accordingly
+        ◦ Update the in-memory model of the corresponding item with the amount that was gathered and update the item’s status accordingly, and set the item's cart id to current cart
         ◦ Reload the items page
     • DELETE /items/:id
         ◦ Update the in-memory model of the corresponding item with the item’s status accordingly
         ◦ Reload the items page
     • POST /carts/:id
-        ◦ Log to the console “Cart <cart_id> Ready”
-    • GET /carts/:id
-        ◦ Log to the console “Cart Required for employee <employee_id>”
-    • POST /users/break/:id
-        ◦ Will respond with an HTML page with a header “You are now on break”
-
+        ◦ Generate a new cart in active status and return in
+    • PUT /carts/:id
+        ◦ change the cart status to filled, generate a new cart and set it as working cart
 
 ## Models
 
@@ -61,8 +57,19 @@ In this exercise you will build a simple web application using node js and expre
         ◦ number
     • filled_quantity
         ◦ number
+    • cart_id
+        ◦ number
     • status
         ◦ string
             ▪ pending
             ▪ filled
             ▪ missing
+
+
+### Cart
+    • id
+        ◦ number
+    • status
+        ◦ string
+            ▪ active
+            ▪ filled
