@@ -18,10 +18,10 @@ In this exercise you will build a simple web application using node js and expre
         ◦ Click on the “Missing cart” drop down will POST to /cart and set a new "active cart" with the cart returned
         ◦ Click on the “Cart ready” button will PUT to /cart/:id, change the cart status to filled, generate a new cart and set it as active cart (should be reflected in UI)
     • PUT /items/:id
-        ◦ Update the in-memory model of the corresponding item with the amount that was gathered and update the item’s status accordingly, and set the item's cart id to current cart
+        ◦ Update the model of the corresponding item with the amount that was gathered and update the item’s status accordingly, and set the item's cart id to current cart
         ◦ Reload the items page
     • DELETE /items/:id
-        ◦ Update the in-memory model of the corresponding item with the item’s status accordingly
+        ◦ Update the model of the corresponding item with the item’s status accordingly
         ◦ Reload the items page
     • POST /carts
         ◦ Generate a new cart in active status and return in
