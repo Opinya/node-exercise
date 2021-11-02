@@ -1,9 +1,9 @@
 # node-full-stack-exercise
 Opinya Full Stack web development exercise
 
-In this exercise you will build a simple web application using node js and express. The app will serve static html through SSR (server side rendering) using the jade template engine.
+In this exercise you will build a simple web application using node js and express. The app will serve static html via SSR (server side rendering) using the jade template engine.
 
-    • The app should have data models for product, line item, as defined in the file below
+    • The app should have data models for product, line item, as defined below
         ◦ You can use mongoose or vanilla classes to define the models
     • The app will load data from a JSON file (resources/data.json) into memory using the models defined
     • The app will serve 3 endpoints
@@ -24,11 +24,11 @@ In this exercise you will build a simple web application using node js and expre
     • DELETE /items/:id
         ◦ Update the in-memory model of the corresponding item with the item’s status accordingly
         ◦ Reload the items page
-    • POST /cart/:id
+    • POST /carts/:id
         ◦ Log to the console “Cart <cart_id> Ready”
-    • GET /cart/:id
+    • GET /carts/:id
         ◦ Log to the console “Cart Required for employee <employee_id>”
-    • POST /break/:id
+    • POST /users/break/:id
         ◦ Will respond with an HTML page with a header “You are now on break”
 
 
