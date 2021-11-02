@@ -23,7 +23,7 @@ In this exercise you will build a simple web application using node js and expre
     • DELETE /items/:id
         ◦ Update the in-memory model of the corresponding item with the item’s status accordingly
         ◦ Reload the items page
-    • POST /carts/:id
+    • POST /carts
         ◦ Generate a new cart in active status and return in
     • PUT /carts/:id
         ◦ change the cart status to filled, generate a new cart and set it as working cart
