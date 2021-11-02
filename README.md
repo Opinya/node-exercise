@@ -32,9 +32,9 @@ In this exercise you will build a simple web application using node js and expre
         ◦ Will respond with an HTML page with a header “You are now on break”
 
 
-##Models
+## Models
 
-###Product
+### Product
     • id
         ◦ number
     • section
@@ -50,7 +50,7 @@ In this exercise you will build a simple web application using node js and expre
     • unit of measure
         ◦ string
 
-###Line Item
+### Line Item
     • id
         ◦ number
     • order_id
