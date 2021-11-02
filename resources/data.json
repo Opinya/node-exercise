@@ -1,0 +1,66 @@
+{
+    "batch": "green",
+    "cart": 153435,
+    "employee": 42,
+    "products": [
+        {
+            "id": 24,
+            "section": 3,
+            "type": "snacks",
+            "name": "במבה",
+            "price": 5.9,
+            "imagePath": "/public/images/bamba.png",
+            "uom": "units"
+        }, {
+            "id": 61,
+            "section": 3,
+            "type": "snacks",
+            "name": "קינדר בואנו",
+            "price": 12.9,
+            "imagePath": "/public/images/kinder.png",
+            "uom": "units"
+        }, {
+            "id": 94,
+            "section": 5,
+            "type": "fruit",
+            "name": "ענבים",
+            "price": 6.5,
+            "imagePath": "/public/images/grape.png",
+            "uom": "kg"
+        }
+    ],
+    "lineItems": [
+        {
+            "id": 321,
+            "productId": 24,
+            "orderId": 2311,
+            "quantity": 3,
+            "filledQuantity": 0,
+            "status": "pending"
+        },
+        {
+            "id": 322,
+            "productId": 24,
+            "orderId": 2312,
+            "quantity": 5,
+            "filledQuantity": 0,
+            "status": "pending"
+        },
+        {
+            "id": 323,
+            "productId": 61,
+            "orderId": 2312,
+            "quantity": 2,
+            "filledQuantity": 0,
+            "status": "pending"
+        },
+        {
+            "id": 324,
+            "productId": 94,
+            "orderId": 2313,
+            "quantity": 0.3,
+            "filledQuantity": 0,
+            "status": "pending"
+        }
+    ]
+}
