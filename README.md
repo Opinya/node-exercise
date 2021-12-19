@@ -2,12 +2,11 @@
 Opinya Full Stack web development exercise
 
 In this exercise you will build a simple web application using node js and express. The app will serve html via SSR (server side rendering) using the jade template engine.
-Please work on a new branch and create a Pull request in the end
+Emphasize writing clean, extensible code and SoC. Add components (Models, Controllers, etc') as you see fit.
+Work on a new branch with your name and create a Pull request in the end
     
-    • The app should have data models for product, line item, as defined below
-        ◦ You can use mongoose or vanilla classes to define the models
     • The app will load data from a JSON file (resources/data.json) into memory using the models defined
-    • The app will serve the following endpoints
+    • The app will serve the following endpoints:
     • GET /items
         ◦ Will return an html page with a list of items based on the design provided in the mock file (resources/app.pdf)
         ◦ The items in the list will be only items with a “pending” status
@@ -25,7 +24,9 @@ Please work on a new branch and create a Pull request in the end
         ◦ Generate a new cart in active status and return in
     • PUT /carts/:id
         ◦ change the cart status to filled, generate a new cart and set it as working cart
-
+    • The app should have data models for product, line item, as defined below
+        ◦ You can use mongoose or vanilla classes to define the models
+    
 ## Models
 
 ### Product
